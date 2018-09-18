@@ -1,6 +1,7 @@
 package com.doterra.research.lambdaexpressions;
 
+@FunctionalInterface
 public interface MyTwoParameterFunction
 {
-    public void applyTwo(String s1, String s2);
+    void applyTwo(String s1, String s2);
 }

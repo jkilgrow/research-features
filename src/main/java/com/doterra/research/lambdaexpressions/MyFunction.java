@@ -1,6 +1,7 @@
 package com.doterra.research.lambdaexpressions;
 
+@FunctionalInterface
 public interface MyFunction
 {
-    public void apply();
+    void apply();
 }

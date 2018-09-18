@@ -1,6 +1,7 @@
 package com.doterra.research.lambdaexpressions;
 
+@FunctionalInterface
 public interface MyMethod
 {
-    public String applyString(String s1, String s2);
+    String applyString(String s1, String s2);
 }
