@@ -92,5 +92,14 @@ public class LambdaExamples
         };
         String returnString = myMethod.applyString("Hello", "World");
         System.out.println("outside lambda: " + returnString);
+
+
+
+        /*
+         * Part 8: lambda can be treated like an object
+         */
+        MyMethod yourMethod = myMethod;
+        String yourValue = yourMethod.applyString("this is", "your method");
+        System.out.println("outside your lambda: " + yourValue);
     }
 }
