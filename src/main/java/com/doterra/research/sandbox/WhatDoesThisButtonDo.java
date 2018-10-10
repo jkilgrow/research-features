@@ -11,7 +11,7 @@ public class WhatDoesThisButtonDo
     public static void main(String[] args)
     {
         int start = 0;
-        int end = 40;
+        int end = 42;
         int bigEnd = 1000000;
         WhatDoesThisButtonDo what = new WhatDoesThisButtonDo();
 
@@ -20,13 +20,15 @@ public class WhatDoesThisButtonDo
          * Result: Slow!
          */
         Instant startInstFun = Instant.now();
+        int value = 0;
         for (int i = start ; i < end ; i++)
         {
-            int value = what.fun(i);
+            value = what.fun(i);
         }
         Instant stopInstFun = Instant.now();
         long diffFun = stopInstFun.toEpochMilli() - startInstFun.toEpochMilli();
         System.out.println("diffFun: " + diffFun);
+        System.out.println("value: " + value);
 
 
 
