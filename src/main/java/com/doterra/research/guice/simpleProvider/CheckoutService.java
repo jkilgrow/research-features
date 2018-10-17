@@ -1,7 +1,7 @@
 package com.doterra.research.guice.simpleProvider;
 
-import javax.inject.Inject;
-import javax.inject.Provider;
+import com.google.inject.Inject;
+import com.google.inject.Provider;
 
 /**
  * A little bit different using a Provider<T>. In this case, you don't have to have an instance until you actually
